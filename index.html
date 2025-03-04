@@ -68,6 +68,90 @@
             text-align: left;
             margin-left: 10px;
         }
+        .contact-sales {
+            border: 2px solid orange;
+            padding: 5px 10px;
+            color: orange !important;
+        }
+        .dropdown-menu {
+            background-color: black;
+            border: 1px solid orange;
+        }
+        .dropdown-item {
+            color: white !important;
+        }
+        .dropdown-item:hover {
+            background-color: orange;
+            color: black !important;
+        }
+        .carousel-inner img {
+            height: 400px; /* Réduire la hauteur du carrousel */
+            object-fit: cover;
+        }
+        .streaming-logo {
+            width: 30px;
+            height: 30px;
+            margin: 2px;
+        }
+        .film-series {
+            width: 100px;
+            height: 150px;
+            background-color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            margin: 0 auto;
+        }
+        .film-icon {
+            width: 100px;
+            height: 150px;
+            background-color: #333;
+            position: relative;
+            margin: 0 auto;
+        }
+        .film-icon::before, .film-icon::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #666;
+        }
+        .film-icon::before {
+            top: 10px;
+            left: 10px;
+        }
+        .film-icon::after {
+            top: 10px;
+            right: 10px;
+        }
+        .film-icon .reel {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 80px;
+            background-color: #444;
+            border-radius: 50%;
+        }
+        .film-icon .reel::before, .film-icon .reel::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #666;
+            border-radius: 50%;
+        }
+        .film-icon .reel::before {
+            top: 20px;
+            left: 20px;
+        }
+        .film-icon .reel::after {
+            bottom: 20px;
+            right: 20px;
+        }
     </style>
 </head>
 <body>
@@ -79,18 +163,36 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">À propos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#">Contenu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Choisissez votre pays
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Belgique</a></li>
+                            <li><a class="dropdown-item" href="#">Cameroun</a></li>
+                            <li><a class="dropdown-item" href="#">Tchad</a></li>
+                            <li><a class="dropdown-item" href="#">Congo</a></li>
+                            <li><a class="dropdown-item" href="#">France</a></li>
+                            <li><a class="dropdown-item" href="#">Argentine</a></li>
+                            <li><a class="dropdown-item" href="#">Bénin</a></li>
+                            <li><a class="dropdown-item" href="#">Mali</a></li>
+                            <li><a class="dropdown-item" href="#">Sénégal</a></li>
+                            <li><a class="dropdown-item" href="#">Canada</a></li>
+                            <li><a class="dropdown-item" href="#">Burundi</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link contact-sales" href="#">Contacter les ventes</a>
                     </li>
                 </ul>
             </div>
@@ -196,6 +298,41 @@
                 <button class="btn btn-outline-secondary feature-button"></button>
                 <p class="feature-description">Todos los deportes en vivo<br>Todo el fútbol mundial en vivo y más deportes: F1, Tennis, NBA, NFL, UFC y mucho más.</p>
             </div>
+        </div>
+    </section>
+
+    <!-- Fifth Section -->
+    <section class="container mt-5">
+        <h2 class="text-center">Centre</h2>
+        <div class="row text-center">
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="film-icon">
+                    <div class="reel"></div>
+                </div>
+                <div class="feature-description">
+                    <strong>Films et séries</strong><br>
+                    Les principales plateformes de streaming en ligne<br>
+                    <div class="d-flex flex-wrap justify-content-center mt-2">
+                        <img src="logo1.png" class="streaming-logo" alt="Logo 1">
+                        <img src="logo2.png" class="streaming-logo" alt="Logo 2">
+                        <img src="logo3.png" class="streaming-logo" alt="Logo 3">
+                        <img src="logo4.png" class="streaming-logo" alt="Logo 4">
+                        <img src="logo5.png" class="streaming-logo" alt="Logo 5">
+                        <img src="logo6.png" class="streaming-logo" alt="Logo 6">
+                        <img src="logo7.png" class="streaming-logo" alt="Logo 7">
+                        <img src="logo8.png" class="streaming-logo" alt="Logo 8">
+                        <img src="logo9.png" class="streaming-logo" alt="Logo 9">
+                        <img src="logo10.png" class="streaming-logo" alt="Logo 10">
+                        <img src="logo11.png" class="streaming-logo" alt="Logo 11">
+                        <img src="logo12.png" class="streaming-logo" alt="Logo 12">
+                        <img src="logo13.png" class="streaming-logo" alt="Logo 13">
+                        <img src="logo14.png" class="streaming-logo" alt="Logo 14">
+                        <img src="logo15.png" class="streaming-logo" alt="Logo 15">
+                        <img src="logo16.png" class="streaming-logo" alt="Logo 16">
+                    </div>
+                </div>
+            </div>
+            <!-- Ajoutez ici les autres colonnes pour la cinquième section -->
         </div>
     </section>
 
